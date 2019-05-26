@@ -1,0 +1,28 @@
+.flight{
+    background-color: blue;
+    border: dotted red 2px;
+} 
+.car{
+    background-color: rgb(174, 175, 80);
+    border: dotted rgb(136, 199, 20) 2px;
+}
+.bike{
+    background-color: rgb(19, 168, 228);
+    border: dotted rgb(129, 42, 179) 2px;
+}
+.tour{
+    background-color: rgb(156, 156, 137);
+    border: dotted rgb(52, 48, 53) 2px;
+}
+.home{
+    background-color: rgb(174, 175, 80);
+    border: dotted rgb(14, 16, 17) 2px;
+}
+.train{
+    background-color: rgb(26, 168, 235);
+    border: dotted rgb(112, 20, 199) 2px;
+}
+.ship{
+    background-color: rgb(163, 30, 141);
+    border: dotted rgb(243, 200, 10) 2px;
+}

@@ -1,0 +1,40 @@
+<ul class="nav nav-tabs">
+  <li class="active"><a  (click)="userSelection='home'" href="#">home</a></li>
+  <li ><a (click)="userSelection='tour'" href="#">tour</a></li>
+  <li ><a (click)="userSelection='flight'" href="#">flights</a></li>
+  <li ><a (click)="userSelection='train'" href="#">trains</a></li>
+  <li ><a (click)="userSelection='bike'" href="#">Bikes</a></li>
+  <li ><a (click)="userSelection='car'" href="#">Cars</a></li>
+  <li ><a (click)="userSelection='ship'" href="#">ships</a></li>
+</ul>
+ {{userSelection}} 
+ <p *ngIf="userSelection=='tour'then tourTab else flightTab"></p>
+<ng-template #tour >home is basic </ng-template>
+<ng-template #tourTab >Lets travel far</ng-template>
+<ng-template #flightTab >Book Your flights</ng-template>
+<ng-template #trainTab >reserve your tickets</ng-template>
+
+<div [ngSwitch]="userSelection">
+
+  <p *ngSwitchCase="'home'">home is basic home</p>
+  <p *ngSwitchCase="'tour'">lets find you someother place</p>
+  <p *ngSwitchCase="'flight'">Book Your flights</p>
+  <p *ngSwitchCase="'train'">reserve Your trains</p>
+  <p *ngSwitchCase="'bike'">Enjoy the ride</p>
+  <p *ngSwitchCase="'car'">long drive is the best drive</p>
+  <p *ngSwitchDefault>all time this default will work</p>
+ 
+</div>
+
+ <div [ngStyle]="{'background-color':userSelection=='tour'?'purple':'grey'}"> 
+ <div [ngStyle]="{'background-color':getColor()}"> 
+  <div [style.backgroundColor]="getColor()"> 
+    <div [ngClass]="userSelection">
+  this is to explain style 
+</div>
+
+<h1 >God Bless Our Project  if we really does HAARDWORK </h1>  
+
+
+
+ 
